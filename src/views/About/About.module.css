@@ -1,0 +1,99 @@
+.container{
+    margin-top: 2rem;
+    min-height: 72.4vh;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+  align-items: center;
+  padding: 2rem;
+  border: 1px solid orange;
+  border-radius: 1rem;
+  min-width: 280px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: scale .5s ease;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* cubre toda la card */
+  background-image: url(../../assets/a0ec9686-65f4-41ee-8510-cf5a88fc89cb.jpeg);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity .5s ease;
+  z-index: 0;
+}
+
+.card:hover::before {
+  opacity: 0.5;
+}
+.card:hover{
+    scale: 1.02;
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+.image{
+    background-color: orange;
+    border-radius: 50%;
+    height: 150px;
+}
+
+.name{
+    border-bottom: 1px solid orange;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.roles{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.rol{
+    padding: 0;
+    margin: 0;
+    color: orange;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: var(--font-title);
+    font-style: italic;
+}
+
+.enlaces{
+    display: flex;
+    gap: 1rem;
+}
+
+.enlace{
+    color: orange;
+}

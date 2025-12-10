@@ -18,3 +18,9 @@
     top: -30px;
     right: 60px;
 }
+
+.enlace{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}

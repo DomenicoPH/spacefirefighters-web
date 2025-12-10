@@ -16,6 +16,7 @@ export default function Presentation(){
                     <div className={style.buttonContainer}>
                         <a className='button' target='_blank' rel='noopener noreferrer' href="https://docs.google.com/document/d/150uiAsqVpKYt_yf6Z0nLbGdzChrDJywCCyPpQF-aMq8/edit?usp=drive_link">GDD</a>
                         <a className='button' target='_blank' rel='noopener noreferrer' href="https://drive.google.com/file/d/1CIJs47AzOvUkqAFHTvek5CQUXhTiKJOH/view?usp=drive_link">VIDEO</a>
+                        <a className='button' >DEMO</a>
                     </div>
                 </div>
                     

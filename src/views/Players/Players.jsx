@@ -4,8 +4,15 @@ import medico from '../../assets/avatar-m.png';
 import ingeniero from '../../assets/avatar-i.png';
 import PlayerCard from './PlayerCard';
 
+import { FaFireExtinguisher } from "react-icons/fa";
+import { AiFillTool } from "react-icons/ai";
+import { BiPlusMedical } from "react-icons/bi";
+import { FaGamepad } from "react-icons/fa";
+
 const personajes = [
     {
+        icon: FaFireExtinguisher,
+        id: 1,
         img: bombero,
         name: 'Bombero',
         tool: 'Manguera de alta presión',
@@ -15,6 +22,19 @@ const personajes = [
         ability: 'Disparar agua desde la manguera para controlar el avance del fuego y Crio-Esferas de nitrato capaces de desintegrar cualquier fuego de menor tamaño.'
     },
     {
+        icon: BiPlusMedical,
+        id: 2,
+        img: medico,
+        name: 'Médico',
+        tool: 'Pistola de Bio-Gel',
+        strength: 'Puede curar a jugadores y NPCs. Es el único que puede cargar NPCs heridos a velocidad normal.',
+        weakness: 'La salud más baja del equipo, su visor se nubla con mayor facilidad por el humo, impidiendo su visión.',
+        role: 'Supervivencia y Extracción.',
+        ability: 'Crea una cúpula donde nadie puede perder el oxígeno por 15 segundos.'
+    },
+    {
+        icon: AiFillTool,
+        id: 3,
         img: ingeniero,
         name: 'Ingeniero',
         tool: 'Llave Inglesa Omni-tool y Soldador de Plasma.',
@@ -23,27 +43,26 @@ const personajes = [
         role: 'Acceso y Mantenimiento.',
         ability: 'Activa temporalmente todas las ventilaciones de la nave para succionar el humo y dar visibilidad clara, abre y cerrar puertas, permitiendo el avance de sus compañeros de equipo y bloqueando el del fuego.'
     },
-    {
-        img: medico,
-        name: 'Médico',
-        tool: 'Pistola de Bio-Gel',
-        strength: 'Puede curar a jugadores y NPCs. Es el único que puede cargar NPCs heridos a velocidad normal.',
-        weakness: 'La salud más baja del equipo, su visor se nubla con mayor facilidad por el humo, impidiendo su visión',
-        role: 'Supervivencia y Extracción.',
-        ability: 'Crea una cúpula donde nadie puede perder el oxígeno por 15 segundos.'
-    },
 ]
 
 export default function Players(){
     return(
         <div className={style.container}>
-            <h2 className='titulo'>Personajes</h2>
+            <div className={style.header}>
+                <h2 className={`titulo ${style.title}`}><FaGamepad size={40} />Personajes</h2>
+                <p className='p'>
+                    Space Firefighters ofrece 3 personajes jugables equipados con trajes y herramientas de alta tecnología, diseñados para operar en crisis extremas. Debido a su costo y complejidad, solo profesionales altamente capacitados pueden usarlos: sin comunicación y coordinación, incluso el mejor equipo se vuelve inútil… o mortal.
+                </p>
+            </div>
 
-            {personajes.map(pers => (
-                <PlayerCard 
-                    pers={pers}
-                />
-            ))}
+            <div className={style.cards}>
+                {personajes.map(pers => (
+                    <PlayerCard 
+                        key={pers.id}
+                        pers={pers}
+                    />
+                ))}
+            </div>
         </div>
     )
 }
