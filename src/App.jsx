@@ -6,11 +6,13 @@ import Game from "./views/Game/Game"
 import Players from "./views/Players/Players"
 import Develop from "./views/Develop/Develop"
 import About from "./views/About/About"
+import ScrollToTop from './utils/ScrollToTop'
 
 function App() {
 
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <>
         <Header />
         <Routes>
