@@ -1,0 +1,20 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 2rem;
+    height: 100px;
+    background-color: black;
+    color: orange;
+    font-family: var(--font-title);
+    font-weight: 300;
+    letter-spacing: .4rem;
+}
+
+.up{
+    position: absolute;
+    font-size: 3rem;
+    top: -30px;
+    right: 60px;
+}
