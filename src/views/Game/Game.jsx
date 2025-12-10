@@ -23,10 +23,10 @@ export default function Game(){
 
                 <div className={style.rightBlock}>
                     <h2 className='titulo'>Especificaciones</h2>
-                    <h3 className={style.dataH3}><span>Plataforma:</span> PC</h3>
-                    <h3 className={style.dataH3}><span>Género:</span> Multijugador cooperativo - Primera persona - Ciencia Ficción.</h3>
-                    <h3 className={style.dataH3}><span>Temática:</span> Espacial - Futurista.</h3>
-                    <h3 className={style.dataH3}><span>Objetivo:</span> Fortalecer la comunicación y el trabajo en equipo.</h3>
+                    <h3 className={style.dataH3}><span className={style.span}>Plataforma:</span> PC</h3>
+                    <h3 className={style.dataH3}><span className={style.span}>Género:</span> Multijugador cooperativo - Primera persona - Ciencia Ficción.</h3>
+                    <h3 className={style.dataH3}><span className={style.span}>Temática:</span> Espacial - Futurista.</h3>
+                    <h3 className={style.dataH3}><span className={style.span}>Objetivo:</span> Fortalecer la comunicación y el trabajo en equipo.</h3>
 
                     <h2 className='titulo'>Concepto</h2>
                     <p className='p'>

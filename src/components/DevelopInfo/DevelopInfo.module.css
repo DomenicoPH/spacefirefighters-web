@@ -1,0 +1,18 @@
+.container{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgb(11, 11, 31), #000000);
+}
+
+.text{
+    font-family: var(--font-title);
+    font-size: 2rem;
+    font-weight: 300;
+    color: orange;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-style: italic;
+}

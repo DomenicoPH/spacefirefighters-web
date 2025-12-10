@@ -60,6 +60,13 @@
     padding: 0;
 }
 
+.span{
+    opacity: .5;
+    margin-right: .5rem;
+    color: white;
+    font-style: italic;
+}
+
 .icon{
     display: flex;
     align-items: center;

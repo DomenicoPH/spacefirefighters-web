@@ -10,11 +10,11 @@ export default function PlayerCard({pers}){
             </div>
             <div className={style.dataContainer}>
                 <h3 className={`titulo ${style.icon}`}><Icon />{pers.name}</h3>
-                <p className='p'><span>Herramienta:</span>{pers.tool}</p>
-                <p className='p'><span>Rol:</span>{pers.role}</p>
-                <p className='p'><span>Habilidad:</span>{pers.ability}</p>
-                <p className='p'><span>Fortalezas:</span>{pers.strength}</p>
-                <p className='p'><span>Debilidades:</span>{pers.weakness}</p>
+                <p className='p'><span className={style.span}>Herramienta:</span>{pers.tool}</p>
+                <p className='p'><span className={style.span}>Rol:</span>{pers.role}</p>
+                <p className='p'><span className={style.span}>Habilidad:</span>{pers.ability}</p>
+                <p className='p'><span className={style.span}>Fortalezas:</span>{pers.strength}</p>
+                <p className='p'><span className={style.span}>Debilidades:</span>{pers.weakness}</p>
                 <hr />
             </div>
         </div>
