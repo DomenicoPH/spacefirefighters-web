@@ -63,6 +63,12 @@ export default function Players(){
                     />
                 ))}
             </div>
+            
+            <div className={style.sectionFooter}>
+                <p className='p'>Para información más detallada, consulta el GDD:</p>
+                <a className='button' target='_blank' rel='noopener noreferrer' href="https://docs.google.com/document/d/150uiAsqVpKYt_yf6Z0nLbGdzChrDJywCCyPpQF-aMq8/edit?usp=drive_link">GDD</a>
+            </div>
+            
         </div>
     )
 }
