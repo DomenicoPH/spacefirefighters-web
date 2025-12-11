@@ -22,19 +22,8 @@ const personajes = [
         ability: 'Disparar agua desde la manguera para controlar el avance del fuego y Crio-Esferas de nitrato capaces de desintegrar cualquier fuego de menor tamaño.'
     },
     {
-        icon: BiPlusMedical,
-        id: 2,
-        img: medico,
-        name: 'Médico',
-        tool: 'Pistola de Bio-Gel',
-        strength: 'Puede curar a jugadores y NPCs. Es el único que puede cargar NPCs heridos a velocidad normal.',
-        weakness: 'La salud más baja del equipo, su visor se nubla con mayor facilidad por el humo, impidiendo su visión.',
-        role: 'Supervivencia y Extracción.',
-        ability: 'Crea una cúpula donde nadie puede perder el oxígeno por 15 segundos.'
-    },
-    {
         icon: AiFillTool,
-        id: 3,
+        id: 2,
         img: ingeniero,
         name: 'Ingeniero',
         tool: 'Llave Inglesa Omni-tool y Soldador de Plasma.',
@@ -43,6 +32,17 @@ const personajes = [
         role: 'Acceso y Mantenimiento.',
         ability: 'Activa temporalmente todas las ventilaciones de la nave para succionar el humo y dar visibilidad clara, abre y cerrar puertas, permitiendo el avance de sus compañeros de equipo y bloqueando el del fuego.'
     },
+    {
+        icon: BiPlusMedical,
+        id: 3,
+        img: medico,
+        name: 'Médico',
+        tool: 'Pistola de Bio-Gel',
+        strength: 'Puede curar a jugadores y NPCs. Es el único que puede cargar NPCs heridos a velocidad normal.',
+        weakness: 'La salud más baja del equipo, su visor se nubla con mayor facilidad por el humo, impidiendo su visión.',
+        role: 'Supervivencia y Extracción.',
+        ability: 'Crea una cúpula donde nadie puede perder el oxígeno por 15 segundos.'
+    }
 ]
 
 export default function Players(){
